@@ -7,7 +7,7 @@ type NoteProps = {
   removeNote: (id: number) => void;
 };
 
-export const Note: React.FC<NoteProps> = ({ id, content, removeNote }) => {
+export const Note = ({ id, content, removeNote }: NoteProps) => {
   return (
     <div className={classes["note-item"]}>
       <span className={classes["content"]}>{content}</span>
